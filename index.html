@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
+
     <script async custom-element="amp-video"
         src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
         <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
@@ -76,6 +78,20 @@
       .blue{color:#00EBFF}
       .yellow{color:#EAFF45}
       .magenta{color:#FF4A89}
+
+      #page1 h2,#page5 h2,#page9 h2,#page13 h2  {
+        color:#B7FF45
+
+      }
+      #page2 h2,#page6 h2,#page10 h2 {
+color:#00EBFF
+      }
+      #page3 h2,#page7 h2,#page11 h2, #page15 h2{
+color:#EAFF45
+      }
+      #page4 h2,#page8 h2,#page12 h2, #page16 h2{
+color:#FF4A89
+      }
       .sign-up-btn{    width: 60%;
         max-width:280px;
     margin: auto;
@@ -125,96 +141,14 @@
         </amp-story-grid-layer>
 
         <amp-story-grid-layer template="vertical" class="bottom">
-            <h2 class="yellow">Stand By Me</h2>
-          <p>Celebrating our Nurse Heroes.</p>
+            <h2 >Stand By Me</h2>
+          <p>Honoring our Nurse Heroes</p>
         </amp-story-grid-layer>
       </amp-story-page>
+
+
 
       <amp-story-page id="page2">
-        <amp-story-grid-layer template="fill">
-          <amp-video autoplay loop
-                width="720" height="1280"
-                poster="black-eyed-peas.png"
-                layout="responsive">
-              <source src="assets/Black_Eyed_Peas_Muted.mp4" type="video/mp4">
-          </amp-video>
-        </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical" class="bottom">
-          <p>Featuring:</p>
-        <h2 class="magenta">The Black Eyed Peas</h2>
-        </amp-story-grid-layer>
-      </amp-story-page>
-
-      <amp-story-page id="page3">
-        <amp-story-grid-layer template="fill">
-          <amp-video autoplay loop
-                width="720" height="1280"
-                poster="andrea-bocelli.png"
-                layout="responsive">
-              <source src="assets/Adrea_Bochelli_Muted.mp4" type="video/mp4">
-          </amp-video>
-        </amp-story-grid-layer>
-
-        <amp-story-grid-layer template="vertical" class="bottom">
-          <p>Featuring:</p>
-        <h2 class="green">Andrea Bocelli</h2>
-        </amp-story-grid-layer>
-      </amp-story-page>
-
-      <amp-story-page id="page4">
-        <amp-story-grid-layer template="fill">
-          <amp-video autoplay loop
-                width="720" height="1280"
-                poster=""
-                layout="responsive">
-              <source src="assets/celine-dion.mp4" type="video/mp4">
-          </amp-video>
-
-        </amp-story-grid-layer>
-
-        <amp-story-grid-layer template="vertical" class="bottom">
-          <p>Featuring:</p>
-        <h2 class="blue">Celine Dion</h2>
-        </amp-story-grid-layer>
-      </amp-story-page>
-
-      <amp-story-page id="page5">
-        <amp-story-grid-layer template="fill">
-          <amp-video autoplay loop
-                width="720" height="1280"
-                poster=""
-                layout="responsive">
-              <source src="assets/David_Foster_Muted.mp4" type="video/mp4">
-          </amp-video>
-
-        </amp-story-grid-layer>
-
-        <amp-story-grid-layer template="vertical" class="bottom">
-            <p>Featuring:</p>
-          <h2 class="yellow">David Foster</h2>
-        </amp-story-grid-layer>
-      </amp-story-page>
-
-
-      <!-- Page 3 (Bird): 3 layers (fill + vertical + vertical) + Audio-->
-      <amp-story-page id="page6">
-        <amp-story-grid-layer template="fill">
-          <amp-video autoplay loop
-                width="720" height="1280"
-                poster=""
-                layout="responsive">
-              <source src="assets/katherine-mcphee.mp4" type="video/mp4">
-          </amp-video>
-        </amp-story-grid-layer>
-
-        <amp-story-grid-layer template="vertical" class="bottom">
-          <p>Featuring:</p>
-        <h2 class="magenta">Katherine McPhee-Foster</h2>
-        </amp-story-grid-layer>
-      </amp-story-page>
-
-      <!-- Page 4 (Rabbit): 3 layers (fill (video) + vertical + vertical) -->
-      <amp-story-page id="page7">
         <amp-story-grid-layer template="fill">
           <amp-video autoplay loop
                 width="720" height="1280"
@@ -229,6 +163,90 @@
         <h2 class="green">Whoopi Goldberg</h2>
         </amp-story-grid-layer>
       </amp-story-page>
+      <amp-story-page id="page3">
+        <amp-story-grid-layer template="fill">
+          <amp-video autoplay loop
+                width="720" height="1280"
+                poster="black-eyed-peas.png"
+                layout="responsive">
+              <source src="assets/Black_Eyed_Peas_Muted.mp4" type="video/mp4">
+          </amp-video>
+        </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p>Featuring:</p>
+        <h2>The Black Eyed Peas</h2>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <amp-story-page id="page4">
+        <amp-story-grid-layer template="fill">
+          <amp-video autoplay loop
+                width="720" height="1280"
+                poster="andrea-bocelli.png"
+                layout="responsive">
+              <source src="assets/Adrea_Bochelli_Muted.mp4" type="video/mp4">
+          </amp-video>
+        </amp-story-grid-layer>
+
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p>Featuring:</p>
+        <h2 >Andrea Bocelli</h2>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <amp-story-page id="page5">
+        <amp-story-grid-layer template="fill">
+          <amp-video autoplay loop
+                width="720" height="1280"
+                poster=""
+                layout="responsive">
+              <source src="assets/celine-dion.mp4" type="video/mp4">
+          </amp-video>
+
+        </amp-story-grid-layer>
+
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p>Featuring:</p>
+        <h2 >Celine Dion</h2>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <amp-story-page id="page6">
+        <amp-story-grid-layer template="fill">
+          <amp-video autoplay loop
+                width="720" height="1280"
+                poster=""
+                layout="responsive">
+              <source src="assets/David_Foster_Muted.mp4" type="video/mp4">
+          </amp-video>
+
+        </amp-story-grid-layer>
+
+        <amp-story-grid-layer template="vertical" class="bottom">
+            <p>Featuring:</p>
+          <h2 >David Foster</h2>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+
+      <!-- Page 3 (Bird): 3 layers (fill + vertical + vertical) + Audio-->
+      <amp-story-page id="page7">
+        <amp-story-grid-layer template="fill">
+          <amp-video autoplay loop
+                width="720" height="1280"
+                poster=""
+                layout="responsive">
+              <source src="assets/katherine-mcphee.mp4" type="video/mp4">
+          </amp-video>
+        </amp-story-grid-layer>
+
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p>Featuring:</p>
+        <h2 >Katherine McPhee-Foster</h2>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+
 
       <amp-story-page id="page8">
         <amp-story-grid-layer template="fill">
@@ -242,7 +260,7 @@
 
         <amp-story-grid-layer template="vertical" class="bottom">
           <p>Featuring:</p>
-        <h2 class="blue">Josh Groban</h2>
+        <h2 >Josh Groban</h2>
         </amp-story-grid-layer>
       </amp-story-page>
 
@@ -258,7 +276,7 @@
 
         <amp-story-grid-layer template="vertical" class="bottom">
           <p>Featuring:</p>
-        <h2 class="yellow">Carole King</h2>
+        <h2 >Carole King</h2>
         </amp-story-grid-layer>
       </amp-story-page>
 
@@ -274,7 +292,7 @@
 
         <amp-story-grid-layer template="vertical" class="bottom">
           <p>Featuring:</p>
-        <h2 class="magenta">Maluma</h2>
+        <h2 >Maluma</h2>
         </amp-story-grid-layer>
       </amp-story-page>
 
@@ -291,7 +309,7 @@
 
         <amp-story-grid-layer template="vertical" class="bottom">
           <p>Featuring:</p>
-        <h2 class="green">Allen Stone</h2>
+        <h2 >Allen Stone</h2>
         </amp-story-grid-layer>
       </amp-story-page>
 
@@ -308,14 +326,28 @@
 
           <amp-story-grid-layer template="vertical" class="bottom">
             <p>Featuring:</p>
-          <h2 class="blue">Stevie Wonder</h2>
+          <h2 >Stevie Wonder</h2>
           </amp-story-grid-layer>
         </amp-story-page>
 
+        <amp-story-page id="page13">
+          <amp-story-grid-layer template="fill">
+            <amp-video autoplay loop
+                  width="720" height="1280"
 
+                  layout="responsive">
+                <source src="assets/Emily_Estefan_Muted.mp4" type="video/mp4">
+            </amp-video>
+          </amp-story-grid-layer>
+
+          <amp-story-grid-layer template="vertical" class="bottom">
+            <p>Featuring:</p>
+          <h2 >Emily Estefan</h2>
+          </amp-story-grid-layer>
+        </amp-story-page>
 
       <!-- Page 5 (Collage): 2 layers + animations -->
-      <amp-story-page id="page13">
+      <amp-story-page id="page14">
         <amp-story-grid-layer template="fill">
           <amp-video autoplay loop
                 width="720" height="1280"
@@ -325,8 +357,39 @@
           </amp-video>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="bottom">
-            <h2>Sign up now for a reminder</h2>
-          <a class="sign-up-btn" href="#">Sign Up</a>
+            <h2 style="margin-bottom:50px;">Sign up now for a reminder</h2>
+            <!--
+          <a class="sign-up-btn" href="#">Sign Up</a>  -->
+          <amp-story-page-attachment layout="nodisplay" data-cta-text="SIGN UP">
+
+            <form class="sample-form"
+    method="post"
+    data-netlify="true"
+  name="signup-form"
+    target="_top">
+    <input type="text"
+      name="name"
+      placeholder="Name..."
+      required>
+    <input type="email"
+      name="email"
+      placeholder="Email..."
+      required>
+    <input type="submit"
+      value="Subscribe">
+    <div submit-success>
+      <template type="amp-mustache">
+        Success! Thanks {{name}} for trying the <code>amp-form</code> demo! Try to insert the word "error" as a name input in the form to see how <code>amp-form</code> handles errors.
+      </template>
+    </div>
+    <div submit-error>
+      <template type="amp-mustache">
+        Error! Thanks {{name}} for trying the <code>amp-form</code> demo with an error response.
+      </template>
+    </div>
+  </form>
+            </amp-story-page-attachment>
+
         </amp-story-grid-layer>
       </amp-story-page>
 
