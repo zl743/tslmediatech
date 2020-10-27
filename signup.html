@@ -1,0 +1,50 @@
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<style>
+  body{background-color:black; font-family: 'Open Sans', sans-serif !important;}
+  .form-submit{width: 20%;background-color:white;padding: 2.5%;margin:auto;position:relative;}
+  button{font-family: 'Open Sans', sans-serif !important;}
+.vid-bg{width: 100%;
+    position: fixed;
+    height: 100vh;}
+.black-overlay{width:100%;height:100%;background-color:black;opacity:.95;position:absolute;}
+
+@media screen and (max-width:768px){
+  .form-submit{width: 90%;padding: 10%;}
+}
+  </style>
+
+  <body class="valign-wrapper">
+<div class="vid-bg ">
+  <div class="black-overlay"></div>
+  <video autoplay muted loop id="myVideo">
+  <source src="assets/video-1.mp4" type="video/mp4">
+</video>
+
+</div>
+<div class="form-submit z-depth-5 ">
+
+<form name="contact" method="POST" data-netlify="true">
+  <p>
+    <label>Name: <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Email: <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <label>Phone Number: <input type="text" name="phone" /></label>
+  </p>
+
+  <p style="text-align:center;">
+    <button class="btn waves-effect waves-light black" type="submit" name="action">Submit
+
+  </button>
+  </p>
+</form>
+</div>
+</body>
