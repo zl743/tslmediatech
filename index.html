@@ -77,6 +77,7 @@
       .yellow{color:#EAFF45}
       .magenta{color:#FF4A89}
       .sign-up-btn{    width: 60%;
+        max-width:280px;
     margin: auto;
     padding: 10px;
     background-color: #B7FF45;
@@ -93,6 +94,8 @@
   <body>
     <!-- Cover page -->
     <amp-story standalone
+    supports-landscape
+
         title="Times Square Live"
         publisher="BlueSwitch"
         publisher-logo-src="assets/AMP-Brand-White-Icon.svg"
@@ -127,57 +130,130 @@
         </amp-story-grid-layer>
       </amp-story-page>
 
-      <!-- Page 2 (Dog): 2 layers (fill + thirds) -->
       <amp-story-page id="page2">
         <amp-story-grid-layer template="fill">
-          <amp-img src="assets/whoopi.png"
-              width="720" height="1280"
-              layout="responsive">
-          </amp-img>
+          <amp-video autoplay loop
+                width="720" height="1280"
+                poster="black-eyed-peas.png"
+                layout="responsive">
+              <source src="assets/Black_Eyed_Peas_Muted.mp4" type="video/mp4">
+          </amp-video>
         </amp-story-grid-layer>
-
         <amp-story-grid-layer template="vertical" class="bottom">
-            <p>Hosted By:</p>
-          <h2 class="blue">Whoopi Goldberg</h2>
+          <p>Featuring:</p>
+        <h2 class="magenta">The Black Eyed Peas</h2>
         </amp-story-grid-layer>
       </amp-story-page>
 
-      <!-- Page 3 (Bird): 3 layers (fill + vertical + vertical) + Audio-->
       <amp-story-page id="page3">
         <amp-story-grid-layer template="fill">
-          <amp-img src="assets/katy-perry.png"
-              width="720" height="1280"
-              layout="responsive">
-          </amp-img>
+          <amp-video autoplay loop
+                width="720" height="1280"
+                poster="andrea-bocelli.png"
+                layout="responsive">
+              <source src="assets/Adrea_Bochelli_Muted.mp4" type="video/mp4">
+          </amp-video>
         </amp-story-grid-layer>
 
         <amp-story-grid-layer template="vertical" class="bottom">
           <p>Featuring:</p>
-        <h2 class="magenta">Katy Perry</h2>
+        <h2 class="green">Andrea Bocelli</h2>
         </amp-story-grid-layer>
       </amp-story-page>
 
-      <!-- Page 4 (Rabbit): 3 layers (fill (video) + vertical + vertical) -->
       <amp-story-page id="page4">
         <amp-story-grid-layer template="fill">
-          <amp-img src="assets/josh-groban.png"
-              width="720" height="1280"
-              layout="responsive">
-          </amp-img>
+          <amp-video autoplay loop
+                width="720" height="1280"
+                poster=""
+                layout="responsive">
+              <source src="assets/celine-dion.mp4" type="video/mp4">
+          </amp-video>
+
         </amp-story-grid-layer>
 
         <amp-story-grid-layer template="vertical" class="bottom">
           <p>Featuring:</p>
-        <h2 class="green">Josh Groban</h2>
+        <h2 class="blue">Celine Dion</h2>
         </amp-story-grid-layer>
       </amp-story-page>
 
       <amp-story-page id="page5">
         <amp-story-grid-layer template="fill">
-          <amp-img src="assets/carole-king.png"
-              width="720" height="1280"
-              layout="responsive">
-          </amp-img>
+          <amp-video autoplay loop
+                width="720" height="1280"
+                poster=""
+                layout="responsive">
+              <source src="assets/David_Foster_Muted.mp4" type="video/mp4">
+          </amp-video>
+
+        </amp-story-grid-layer>
+
+        <amp-story-grid-layer template="vertical" class="bottom">
+            <p>Featuring:</p>
+          <h2 class="yellow">David Foster</h2>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+
+      <!-- Page 3 (Bird): 3 layers (fill + vertical + vertical) + Audio-->
+      <amp-story-page id="page6">
+        <amp-story-grid-layer template="fill">
+          <amp-video autoplay loop
+                width="720" height="1280"
+                poster=""
+                layout="responsive">
+              <source src="assets/katherine-mcphee.mp4" type="video/mp4">
+          </amp-video>
+        </amp-story-grid-layer>
+
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p>Featuring:</p>
+        <h2 class="magenta">Katherine McPhee-Foster</h2>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <!-- Page 4 (Rabbit): 3 layers (fill (video) + vertical + vertical) -->
+      <amp-story-page id="page7">
+        <amp-story-grid-layer template="fill">
+          <amp-video autoplay loop
+                width="720" height="1280"
+                poster="assets/whoopi.png"
+                layout="responsive">
+              <source src="assets/Whoopi_muted.mp4" type="video/mp4">
+          </amp-video>
+        </amp-story-grid-layer>
+
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p>Featuring:</p>
+        <h2 class="green">Whoopi Goldberg</h2>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <amp-story-page id="page8">
+        <amp-story-grid-layer template="fill">
+          <amp-video autoplay loop
+                width="720" height="1280"
+                poster="assets/josh-groban.png"
+                layout="responsive">
+              <source src="assets/Josh_Groban_Muted.mp4" type="video/mp4">
+          </amp-video>
+        </amp-story-grid-layer>
+
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p>Featuring:</p>
+        <h2 class="blue">Josh Groban</h2>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+      <amp-story-page id="page9">
+        <amp-story-grid-layer template="fill">
+          <amp-video autoplay loop
+                width="720" height="1280"
+                poster="assets/carole-king.png"
+                layout="responsive">
+              <source src="assets/Carole_King_Muted.mp4" type="video/mp4">
+          </amp-video>
         </amp-story-grid-layer>
 
         <amp-story-grid-layer template="vertical" class="bottom">
@@ -186,77 +262,60 @@
         </amp-story-grid-layer>
       </amp-story-page>
 
-      <amp-story-page id="page6">
+      <amp-story-page id="page10">
         <amp-story-grid-layer template="fill">
-          <amp-img src="assets/andrea-bocelli.png"
-              width="720" height="1280"
-              layout="responsive">
-          </amp-img>
-        </amp-story-grid-layer>
-
-        <amp-story-grid-layer template="vertical" class="bottom">
-          <p>Featuring:</p>
-        <h2 class="blue">Andrea Bocelli</h2>
-        </amp-story-grid-layer>
-      </amp-story-page>
-
-
-      <amp-story-page id="page7">
-        <amp-story-grid-layer template="fill">
-          <amp-img src="assets/wailers.png"
-              width="720" height="1280"
-              layout="responsive">
-          </amp-img>
-        </amp-story-grid-layer>
-
-        <amp-story-grid-layer template="vertical" class="bottom">
-          <p>Featuring:</p>
-        <h2 class="magenta">The Wailers</h2>
-        </amp-story-grid-layer>
-      </amp-story-page>
-
-      <amp-story-page id="page8">
-        <amp-story-grid-layer template="fill">
-          <amp-img src="assets/black-eyed-peas.png"
-              width="720" height="1280"
-              layout="responsive">
-          </amp-img>
-        </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical" class="bottom">
-          <p>Featuring:</p>
-        <h2 class="green">The Black Eyed Peas</h2>
-        </amp-story-grid-layer>
-      </amp-story-page>
-        <amp-story-page id="page9">
-          <amp-story-grid-layer template="fill">
-            <amp-img src="assets/maluma.png"
+          <amp-video autoplay loop
                 width="720" height="1280"
+                poster="assets/maluma.png"
                 layout="responsive">
-            </amp-img>
+              <source src="assets/Maluma_Muted.mp4" type="video/mp4">
+          </amp-video>
+        </amp-story-grid-layer>
+
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p>Featuring:</p>
+        <h2 class="magenta">Maluma</h2>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+
+      <amp-story-page id="page11">
+        <amp-story-grid-layer template="fill">
+          <amp-video autoplay loop
+                width="720" height="1280"
+                poster="assets/allen-stone.png"
+                layout="responsive">
+              <source src="assets/Allen_Stone_Muted.mp4" type="video/mp4">
+          </amp-video>
+        </amp-story-grid-layer>
+
+        <amp-story-grid-layer template="vertical" class="bottom">
+          <p>Featuring:</p>
+        <h2 class="green">Allen Stone</h2>
+        </amp-story-grid-layer>
+      </amp-story-page>
+
+
+        <amp-story-page id="page12">
+          <amp-story-grid-layer template="fill">
+            <amp-video autoplay loop
+                  width="720" height="1280"
+
+                  layout="responsive">
+                <source src="assets/stevie-wonder.mp4" type="video/mp4">
+            </amp-video>
           </amp-story-grid-layer>
 
           <amp-story-grid-layer template="vertical" class="bottom">
             <p>Featuring:</p>
-          <h2 class="yellow">Maluma</h2>
+          <h2 class="blue">Stevie Wonder</h2>
           </amp-story-grid-layer>
         </amp-story-page>
 
-        <amp-story-page id="page10">
-          <amp-story-grid-layer template="fill">
-            <amp-img src="assets/allen-stone.png"
-                width="720" height="1280"
-                layout="responsive">
-            </amp-img>
-          </amp-story-grid-layer>
 
-          <amp-story-grid-layer template="vertical" class="bottom">
-            <p>Featuring:</p>
-          <h2 class="blue">Allen Stone</h2>
-          </amp-story-grid-layer>
-        </amp-story-page>
 
       <!-- Page 5 (Collage): 2 layers + animations -->
-      <amp-story-page id="page11">
+      <amp-story-page id="page13">
         <amp-story-grid-layer template="fill">
           <amp-video autoplay loop
                 width="720" height="1280"
