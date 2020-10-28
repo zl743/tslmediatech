@@ -25,30 +25,30 @@
     "type": "heading",
     "text": "Thank you for joining us in support of our Nurse Heroes!"
   }, {
-    "type": "small",
+    "type": "landscape",
     "title": "Northwell Health",
     "url": "http://northwell.edu",
-    "image": "http://www.tslivemedia.com/assets/northwell_256.jpg"
+    "image": "http://www.tslivemedia.com/assets/northwell-logo-landscape.png"
   }, {
-    "type": "small",
+    "type": "landscape",
     "title": "Nurse Heroes Foundation",
     "url": "http://nurseheroes.org",
-    "image": "http://www.tslivemedia.com/assets/nurse-heroes_256.jpg"
+    "image": "http://www.tslivemedia.com/assets/nurse-heroes_landscape.jpg"
   }, {
-    "type": "small",
+    "type": "landscape",
     "title": "Thomson Reuters",
     "url": "http://thomsonreuters.com",
-    "image": "https://res-1.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco/v1397191966/68aa3a98f81f5e09a3afb00a73461434.png"
+    "image": "http://www.tslivemedia.com/assets/thomson-reuters_landscape.jpg"
   }, {
-    "type": "small",
+    "type": "landscape",
     "title": "LiveXLive",
     "url": "https://livexlive.com",
-    "image": "https://www.tslivemedia.com/assets/livexlive_256.png"
+    "image": "https://www.tslivemedia.com/assets/livexlive_landscape.png"
   }, {
-    "type": "small",
+    "type": "landscape",
     "title": "Rogers & Cowan PMK",
     "url": "https://rogersandcowanpmk.com",
-    "image": "http://www.tslivemedia.com/assets/rcpmk_256.png"
+    "image": "http://www.tslivemedia.com/assets/rcpmk_landscape.png"
   }, {
     "type": "heading",
     "text": "Credits"
