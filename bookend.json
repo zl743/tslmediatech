@@ -24,13 +24,12 @@
       ]
     },
     {
-        "type": "Credits",
-        "text": "Support Nurse Heroes"
+        "type": "heading",
+        "text": "Credits"
       },{
       "type": "textbox",
       "text": [
-        "Presented by Northwell Health",
-        "Event by Times Square Live Media",
+        "Produced by Times Square Live Media & Estefan Productions",
         "AMP Development by BlueSwitch"
       ]
     }

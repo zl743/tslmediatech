@@ -188,31 +188,57 @@
         font-size: 16px;
         line-height: 24px;
       }
+      .donate-btn {
+        width: 60%;
+        max-width: 280px;
+        margin: auto;
+        padding: 10px;
+        border: #B7FF45 solid 3px;
+        text-decoration: none;
+        color: #B7FF45;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 0.1em;
+        border-radius: 10px;
+        font-size: 16px;
+        line-height: 24px;
+      }
       #tsl-logo {
         max-width: 422px;
         margin: auto;
+      }
+      #nh-logo {
+        max-width: 263px;
+        margin: auto;
+      }
+      #button-container a:last-of-type {margin-left: 20px;}
+      #button-container a {
+        white-space: nowrap;
+        margin-top: 20px;
       }
     </style>
   </head>
   <body>
     <!-- Cover page -->
     <amp-story standalone="standalone" supports-landscape="supports-landscape" title="Stand by Me: Hooring our Nurse Heroes, a TSL Media Concert Event" publisher="Times Square Live Media" publisher-logo-src="assets/AMP-Brand-White-Icon.svg" poster-portrait-src="assets/group-8.jpg">
-      <amp-story-page id="cover">
+      <amp-story-page id="cover"  auto-advance-after="5s">
         <amp-story-grid-layer template="fill">
           <amp-video noaudio autoplay="autoplay" loop="loop" width="720" height="1280" poster="" layout="responsive">
             <source src="assets/video-1.mp4" type="video/mp4">
           </amp-video>
         </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical" class="center">
-          <amp-img src="assets/tsl.png" width="422" height="186" layout="intrinsic" id="tsl-logo"></amp-img>
+        <amp-story-grid-layer template="vertical" class="top">
+          <amp-img alt="Tiems Square Live Logo" src="assets/tsl.png" width="422" height="186" layout="intrinsic" id="tsl-logo"></amp-img>
+          <h3>& Emilio Estefan Productions</h3><h2>Present</h2>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="bottom">
           <h2 class="yellow">Stand By Me</h2>
-          <p>Honoring our Nurse Heroes</p>
+          <p>A Concert Honoring our Nurse Heroes</p>
         </amp-story-grid-layer>
       </amp-story-page>
 
-      <amp-story-page id="page1">
+      <!-- Content slides -->
+      <amp-story-page id="page1" auto-advance-after="6s">
         <amp-story-grid-layer template="fill">
           <amp-img src="assets/nurse-heroes.png" width="720" height="1280" layout="responsive"></amp-img>
         </amp-story-grid-layer>
@@ -220,15 +246,20 @@
           <h2>Streaming live on Thanksgiving</h2>
           <h3>November 26 at 8pm ET/5pm PT</h3>
         </amp-story-grid-layer>
+        <amp-story-grid-layer template="vertical" class="center">
+          <h3>All proceeds benefit the<h3><h2>Nurse Heroes Foundation</h2>
+        </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="bottom">
-          <h2 class="yellow">Stand By Me</h2>
-          <p>Honoring our Nurse Heroes</p>
+          <amp-layout id="button-container" layout="container">
+            <a class="sign-up-btn" href="signup.html" target="_blank">Sign Up for Reminders</a>
+            <a class="donate-btn" href="sms:707070&body=NURSE" target="_blank">Donate Now</a>
+          </amp-layout>
         </amp-story-grid-layer>
       </amp-story-page>
 
-      <amp-story-page id="page2">
+      <amp-story-page id="page2" auto-advance-after="whoopi-video">
         <amp-story-grid-layer template="fill">
-          <amp-video noaudio autoplay="autoplay" loop="loop" width="720" height="1280" poster="assets/whoopi.png" layout="responsive">
+          <amp-video id="whoopi-video" noaudio autoplay="autoplay" loop="loop" width="720" height="1280" poster="assets/whoopi.png" layout="responsive">
             <source src="assets/Whoopi_muted.mp4" type="video/mp4">
           </amp-video>
         </amp-story-grid-layer>
@@ -239,9 +270,9 @@
         </amp-story-grid-layer>
       </amp-story-page>
 
-      <amp-story-page id="page3">
+      <amp-story-page id="page3" auto-advance-after="bep-video">
         <amp-story-grid-layer template="fill">
-          <amp-video noaudio autoplay="autoplay" loop="loop" width="720" height="1280" poster="black-eyed-peas.png" layout="responsive">
+          <amp-video id="bep-video" noaudio autoplay="autoplay" loop="loop" width="720" height="1280" poster="black-eyed-peas.png" layout="responsive">
             <source src="assets/Black_Eyed_Peas_Muted.mp4" type="video/mp4">
           </amp-video>
         </amp-story-grid-layer>
@@ -251,9 +282,9 @@
         </amp-story-grid-layer>
       </amp-story-page>
 
-      <amp-story-page id="page4">
+      <amp-story-page id="page4" auto-advance-after="ab-video">
         <amp-story-grid-layer template="fill">
-          <amp-video noaudio autoplay="autoplay" loop="loop" width="720" height="1280" poster="andrea-bocelli.png" layout="responsive">
+          <amp-video id="ab-video" noaudio autoplay="autoplay" loop="loop" width="720" height="1280" poster="andrea-bocelli.png" layout="responsive">
             <source src="assets/Adrea_Bochelli_Muted.mp4" type="video/mp4">
           </amp-video>
         </amp-story-grid-layer>
@@ -264,9 +295,9 @@
         </amp-story-grid-layer>
       </amp-story-page>
 
-      <amp-story-page id="page5">
+      <amp-story-page id="page5"  auto-advance-after="cd-video">
         <amp-story-grid-layer template="fill">
-          <amp-video noaudio autoplay="autoplay" loop="loop" width="720" height="1280" poster="" layout="responsive">
+          <amp-video id="cd-video" noaudio autoplay="autoplay" loop="loop" width="720" height="1280" poster="" layout="responsive">
             <source src="assets/celine-dion.mp4" type="video/mp4">
           </amp-video>
 
@@ -278,9 +309,9 @@
         </amp-story-grid-layer>
       </amp-story-page>
 
-      <amp-story-page id="page6">
+      <amp-story-page id="page6" auto-advance-after="sw-video">
         <amp-story-grid-layer template="fill">
-          <amp-video noaudio autoplay="autoplay" loop="loop" width="720" height="1280" layout="responsive">
+          <amp-video id="sw-video" noaudio autoplay="autoplay" loop="loop" width="720" height="1280" layout="responsive">
             <source src="assets/stevie-wonder.mp4" type="video/mp4">
           </amp-video>
         </amp-story-grid-layer>
@@ -291,9 +322,9 @@
         </amp-story-grid-layer>
       </amp-story-page>
 
-      <amp-story-page id="page7">
+      <amp-story-page id="page7" auto-advance-after="ge-video">
         <amp-story-grid-layer template="fill">
-          <amp-video noaudio autoplay="autoplay" loop="loop" width="720" height="1280" layout="responsive">
+          <amp-video id="ge-video" noaudio autoplay="autoplay" loop="loop" width="720" height="1280" layout="responsive">
             <source src="assets/gloria_muted.mp4" type="video/mp4">
           </amp-video>
         </amp-story-grid-layer>
@@ -304,9 +335,9 @@
         </amp-story-grid-layer>
       </amp-story-page>
 
-      <amp-story-page id="page8">
+      <amp-story-page id="page8" auto-advance-after="maluma-video">
         <amp-story-grid-layer template="fill">
-          <amp-video noaudio autoplay="autoplay" loop="loop" width="720" height="1280" poster="assets/maluma.png" layout="responsive">
+          <amp-video id="maluma-video" noaudio autoplay="autoplay" loop="loop" width="720" height="1280" poster="assets/maluma.png" layout="responsive">
             <source src="assets/Maluma_Muted.mp4" type="video/mp4">
           </amp-video>
         </amp-story-grid-layer>
@@ -317,9 +348,9 @@
         </amp-story-grid-layer>
       </amp-story-page>
 
-      <amp-story-page id="page9">
+      <amp-story-page id="page9"  auto-advance-after="as-video">
         <amp-story-grid-layer template="fill">
-          <amp-video noaudio autoplay="autoplay" loop="loop" width="720" height="1280" poster="assets/allen-stone.png" layout="responsive">
+          <amp-video id="as-video" noaudio autoplay="autoplay" loop="loop" width="720" height="1280" poster="assets/allen-stone.png" layout="responsive">
             <source src="assets/Allen_Stone_Muted.mp4" type="video/mp4">
           </amp-video>
         </amp-story-grid-layer>
@@ -330,9 +361,9 @@
         </amp-story-grid-layer>
       </amp-story-page>
 
-      <amp-story-page id="page10">
+      <amp-story-page id="page10" auto-advance-after="mcphee-video">
         <amp-story-grid-layer template="fill">
-          <amp-video noaudio autoplay="autoplay" loop="loop" width="720" height="1280" poster="" layout="responsive">
+          <amp-video id="mcphee-video" noaudio autoplay="autoplay" loop="loop" width="720" height="1280" poster="" layout="responsive">
             <source src="assets/katherine-mcphee.mp4" type="video/mp4">
           </amp-video>
         </amp-story-grid-layer>
@@ -343,9 +374,9 @@
         </amp-story-grid-layer>
       </amp-story-page>
 
-      <amp-story-page id="page11">
+      <amp-story-page id="page11" auto-advance-after="jg-video">
         <amp-story-grid-layer template="fill">
-          <amp-video noaudio autoplay="autoplay" loop="loop" width="720" height="1280" poster="assets/josh-groban.png" layout="responsive">
+          <amp-video id="jg-video" noaudio autoplay="autoplay" loop="loop" width="720" height="1280" poster="assets/josh-groban.png" layout="responsive">
             <source src="assets/Josh_Groban_Muted.mp4" type="video/mp4">
           </amp-video>
         </amp-story-grid-layer>
@@ -356,9 +387,9 @@
         </amp-story-grid-layer>
       </amp-story-page>
 
-      <amp-story-page id="page12">
+      <amp-story-page id="page12" auto-advance-after="ee-video">
         <amp-story-grid-layer template="fill">
-          <amp-video noaudio autoplay="autoplay" loop="loop" width="720" height="1280" layout="responsive">
+          <amp-video id="ee-video" noaudio autoplay="autoplay" loop="loop" width="720" height="1280" layout="responsive">
             <source src="assets/Emily_Estefan_Muted.mp4" type="video/mp4">
           </amp-video>
         </amp-story-grid-layer>
@@ -369,9 +400,9 @@
         </amp-story-grid-layer>
       </amp-story-page>
 
-      <amp-story-page id="page13">
+      <amp-story-page id="page13" auto-advance-after="ck-video">
         <amp-story-grid-layer template="fill">
-          <amp-video noaudio autoplay="autoplay" loop="loop" width="720" height="1280" poster="assets/carole-king.png" layout="responsive">
+          <amp-video id="ck-video" noaudio autoplay="autoplay" loop="loop" width="720" height="1280" poster="assets/carole-king.png" layout="responsive">
             <source src="assets/Carole_King_Muted.mp4" type="video/mp4">
           </amp-video>
         </amp-story-grid-layer>
@@ -382,9 +413,9 @@
         </amp-story-grid-layer>
       </amp-story-page>
 
-      <amp-story-page id="page14">
+      <amp-story-page id="page14" auto-advance-after="smw-video">
         <amp-story-grid-layer template="fill">
-          <amp-video noaudio autoplay="autoplay" loop="loop" width="720" height="1280" poster="assets/carole-king.png" layout="responsive">
+          <amp-video id="smw-video" noaudio autoplay="autoplay" loop="loop" width="720" height="1280" poster="assets/carole-king.png" layout="responsive">
             <source src="assets/skip-marley.mp4" type="video/mp4">
           </amp-video>
         </amp-story-grid-layer>
@@ -395,9 +426,9 @@
         </amp-story-grid-layer>
       </amp-story-page>
 
-      <amp-story-page id="page15">
+      <amp-story-page id="page15" auto-advance-after="df-video">
         <amp-story-grid-layer template="fill">
-          <amp-video noaudio autoplay="autoplay" loop="loop" width="720" height="1280" poster="" layout="responsive">
+          <amp-video id="df-video" noaudio autoplay="autoplay" loop="loop" width="720" height="1280" poster="" layout="responsive">
             <source src="assets/David_Foster_Muted_2.mp4" type="video/mp4">
           </amp-video>
 
@@ -409,13 +440,13 @@
         </amp-story-grid-layer>
       </amp-story-page>
 
-      <amp-story-page id="page16">
+      <amp-story-page id="page16" auto-advance-after="4s">
         <amp-story-grid-layer template="fill">
           <amp-video noaudio autoplay="autoplay" loop="loop" width="720" height="1280" poster="" layout="responsive">
             <source src="assets/video-1.mp4" type="video/mp4">
           </amp-video>
         </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical" class="center">
+        <amp-story-grid-layer template="vertical" class="top">
           <h2 style="margin-bottom:50px;">Sign up now for a reminder</h2>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="bottom">
@@ -425,12 +456,15 @@
 
       <amp-story-page id="page17">
         <amp-story-grid-layer template="fill">
-          <amp-img src="assets/stand-by-me.png" width="720" height="1280" layout="responsive"></amp-img>
+          <amp-img src="assets/stand-by-me.jpg" width="720" height="1280" layout="responsive"></amp-img>
         </amp-story-grid-layer>
-
+        <amp-story-grid-layer template="vertical" class="top">
+          <h2 class="magenta">Support the Nurse Heroes Foundation</h2>
+        </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="bottom">
           <h2 >TEXT NURSE TO 707070 TO DONATE</h2>
-          <p>(USA only)</p>
+          <h3>(USA only)</h3>
+          <a class="donate-btn" href="sms:707070&body=NURSE" target="_blank">Donate Now</a>
         </amp-story-grid-layer>
       </amp-story-page>
 
