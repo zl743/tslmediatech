@@ -3,40 +3,35 @@
   "shareProviders": [
     "facebook",
     "twitter",
-    "email"
+    "email",
+    "sms",
+    "whatsapp"
   ],
-  "components": [
-    {
+  "components": [{
       "type": "heading",
-      "text": "More to read"
-    },
-    {
-      "type": "small",
-      "title": "Learn about cats",
-      "url": "https://wikipedia.org/wiki/Cat",
-      "image": "assets/bookend_cats.jpg"
-    },
-    {
-      "type": "landscape",
-      "title": "Learn about border collies",
-      "url": "https://wikipedia.org/wiki/Border_Collie",
-      "image": "assets/bookend_dogs.jpg",
-      "category": "Dogs"
-    },
-    {
-      "type": "portrait",
-      "title": "Learn about macaws",
-      "url": "https://wikipedia.org/wiki/Macaw",
-      "image": "assets/bookend_birds.jpg",
-      "category": "birds"
+      "text": "Support Nurse Heroes"
     },
     {
       "type": "cta-link",
-      "links": [
+      "links": [{
+          "text": "Remind me",
+          "url": "signup.html"
+        },
         {
-          "text": "Learn more",
-          "url": "https://www.ampproject.org/stories/"
+          "text": "Donate now",
+          "url": "sms:707070&body=NURSE"
         }
+      ]
+    },
+    {
+        "type": "Credits",
+        "text": "Support Nurse Heroes"
+      },{
+      "type": "textbox",
+      "text": [
+        "Presented by Northwell Health",
+        "Event by Times Square Live Media",
+        "AMP Development by BlueSwitch"
       ]
     }
   ]
