@@ -1,7 +1,6 @@
 {
   "bookendVersion": "v1.0",
   "shareProviders": [
-    "facebook",
     "twitter",
     "email",
     "sms",
@@ -26,14 +25,14 @@
     "text": "Thank you for joining us in support of our Nurse Heroes!"
   }, {
     "type": "small",
-    "title": "Northwell Health",
-    "url": "http://northwell.edu",
-    "image": "http://www.tslivemedia.com/assets/northwell_256.jpg"
-  }, {
-    "type": "small",
     "title": "Nurse Heroes Foundation",
     "url": "http://nurseheroes.org",
     "image": "http://www.tslivemedia.com/assets/nurse-heroes_256.jpg"
+  }, {
+    "type": "small",
+    "title": "Northwell Health",
+    "url": "http://northwell.edu",
+    "image": "http://www.tslivemedia.com/assets/northwell_256.jpg"
   }, {
     "type": "small",
     "title": "Thomson Reuters",
@@ -49,6 +48,11 @@
     "title": "Rogers & Cowan PMK",
     "url": "https://rogersandcowanpmk.com",
     "image": "http://www.tslivemedia.com/assets/rcpmk_256.png"
+  }, {
+    "type": "small",
+    "title": "Times Square Live",
+    "url": "https://tslmediatech.com/",
+    "image": "http://www.tslivemedia.com/assets/tsl_logo_square.png"
   }, {
     "type": "heading",
     "text": "Credits"
