@@ -7,31 +7,56 @@
     "sms",
     "whatsapp"
   ],
-  "components": [{
-      "type": "heading",
-      "text": "Support Nurse Heroes"
-    },
-    {
-      "type": "cta-link",
-      "links": [{
-          "text": "Remind me",
-          "url": "signup.html"
-        },
-        {
-          "text": "Donate now",
-          "url": "sms:707070&body=NURSE"
-        }
-      ]
-    },
-    {
-        "type": "heading",
-        "text": "Credits"
-      },{
-      "type": "textbox",
-      "text": [
-        "Produced by Times Square Live Media & Estefan Productions",
-        "AMP Development by BlueSwitch"
-      ]
-    }
-  ]
+  "components": [ {
+    "type": "heading",
+    "text": "Support Nurse Heroes"
+  }, {
+    "type": "cta-link",
+    "links": [{
+        "text": "Remind me",
+        "url": "signup.html"
+      },
+      {
+        "text": "Donate now",
+        "url": "http://pledgeling.com/nurse"
+      }
+    ]
+  }, {
+    "type": "heading",
+    "text": "Thank you for joining us in support of our Nurse Heroes!"
+  }, {
+    "type": "small",
+    "title": "Northwell Health",
+    "url": "http://northwell.edu",
+    "image": "http://www.tslivemedia.com/assets/northwell_256.jpg"
+  }, {
+    "type": "small",
+    "title": "Nurse Heroes Foundation",
+    "url": "http://nurseheroes.org",
+    "image": "http://www.tslivemedia.com/assets/nurse-heroes_256.jpg"
+  }, {
+    "type": "small",
+    "title": "Thomson Reuters",
+    "url": "http://thomsonreuters.com",
+    "image": "https://res-1.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco/v1397191966/68aa3a98f81f5e09a3afb00a73461434.png"
+  }, {
+    "type": "small",
+    "title": "LiveXLive",
+    "url": "https://livexlive.com",
+    "image": "https://www.tslivemedia.com/assets/livexlive_256.png"
+  }, {
+    "type": "small",
+    "title": "Rogers & Cowan PMK",
+    "url": "https://rogersandcowanpmk.com",
+    "image": "http://www.tslivemedia.com/assets/rcpmk_256.png"
+  }, {
+    "type": "heading",
+    "text": "Credits"
+  }, {
+    "type": "textbox",
+    "text": [
+      "Produced by Times Square Live Media & Estefan Productions",
+      "AMP Web Story Development by BlueSwitch"
+    ]
+  }]
 }
