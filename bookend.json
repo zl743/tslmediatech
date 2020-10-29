@@ -1,7 +1,6 @@
 {
   "bookendVersion": "v1.0",
   "shareProviders": [
-    "facebook",
     "twitter",
     "email",
     "sms",
@@ -18,7 +17,7 @@
       },
       {
         "text": "Donate now",
-        "url": "http://pledgeling.com/nurse"
+        "url": "https://pledgeling.com/nurse"
       }
     ]
   }, {
@@ -26,18 +25,18 @@
     "text": "Thank you for joining us in support of our Nurse Heroes!"
   }, {
     "type": "small",
-    "title": "Northwell Health",
-    "url": "http://northwell.edu",
-    "image": "http://www.tslivemedia.com/assets/northwell_256.jpg"
+    "title": "Nurse Heroes Foundation",
+    "url": "https://nurseheroes.org",
+    "image": "https://www.tslivemedia.com/assets/nurse-heroes_256.jpg"
   }, {
     "type": "small",
-    "title": "Nurse Heroes Foundation",
-    "url": "http://nurseheroes.org",
-    "image": "http://www.tslivemedia.com/assets/nurse-heroes_256.jpg"
+    "title": "Northwell Health",
+    "url": "https://northwell.edu",
+    "image": "https://www.tslivemedia.com/assets/northwell_256.jpg"
   }, {
     "type": "small",
     "title": "Thomson Reuters",
-    "url": "http://thomsonreuters.com",
+    "url": "https://thomsonreuters.com",
     "image": "https://res-1.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco/v1397191966/68aa3a98f81f5e09a3afb00a73461434.png"
   }, {
     "type": "small",
@@ -48,7 +47,12 @@
     "type": "small",
     "title": "Rogers & Cowan PMK",
     "url": "https://rogersandcowanpmk.com",
-    "image": "http://www.tslivemedia.com/assets/rcpmk_256.png"
+    "image": "https://www.tslivemedia.com/assets/rcpmk_256.png"
+  }, {
+    "type": "small",
+    "title": "Times Square Live",
+    "url": "https://tslmediatech.com/",
+    "image": "https://www.tslivemedia.com/assets/tsl_logo_square.png"
   }, {
     "type": "heading",
     "text": "Credits"
