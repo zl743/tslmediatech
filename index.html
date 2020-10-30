@@ -1,5 +1,5 @@
 <!doctype html>
-<html ⚡="⚡">
+<html ⚡=>
 
   <head>
     <meta charset="utf-8">
@@ -7,6 +7,7 @@
     <link rel="canonical" href="https://www.tslivemedia.com">
     <link rel="stylesheet" href="https://use.typekit.net/nqr5aqw.css">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="/favicon.png">
     <style amp-boilerplate="amp-boilerplate">
       body {
         -webkit-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
@@ -81,11 +82,16 @@
       }
       h2 {
         margin-top: -15px;
-        font-family: 'acier-bat-noir', sans-serif;
+        font-family: 'acier-bat-gris', sans-serif;
         font-weight: bold;
         font-size: 3em;
         font-weight: normal;
         line-height: 1.174;
+      }
+      h1 {
+        font-family: 'acier-bat-solid', sans-serif;
+        font-size: 3em;
+        margin-bottom: 20px;
       }
       @media screen and (max-width:768px) {
         h2 {
@@ -167,7 +173,6 @@
         color: #EAFF45;
       }
       #page11 h2,
-      #page1 h2,
       #page13 h2,
       #page3 h2,
       #page7 h2 {
@@ -213,8 +218,12 @@
         margin: auto;
       }
       #nh-logo {
-        max-width: 305px;
+        max-width: 280px;
         margin: auto;
+      }
+      #nh-drawing {
+        max-width: 100vw;
+        max-height: 95vh;
       }
       #button-container a:last-of-type {
         margin-left: 20px;
@@ -232,29 +241,47 @@
       amp-video {
         background: linear-gradient(white,black);
       }
+      #drawing-swipe-up { background-color: black; }
+      .shadow {
+        background: #00000054;
+        background: radial-gradient(ellipse at center, #00000054, #FFFFFF00);
+      }
+      #page1 * * h2 { line-height: 1; }
+      #page18 * h1 { font-size: 2.5em;}
     </style>
-
-    <!-- Twitter Card data -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Stand by Me: A Concert Honoring our Nurse Heroes">
-    <meta name="twitter:image" content="https://www.tslivemedia.com/assets/group-8.png">
 
     <!-- Open Graph data -->
     <meta property="og:title" content="Stand by Me: A Concert Honoring our Nurse Heroes"/>
+    <meta property="og:url" content="http://tslivemedia.com/" />
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="https://www.tslivemedia.com/assets/group-8.png"/>
+    <meta property="og:image" content="https://www.tslivemedia.com/assets/social-share.png"/>
+    <meta property="og:image:height" content="774"/>
+    <meta property="og:image:width" content="905"/>
+    <meta property="og:image:secure_url" content="https://www.tslivemedia.com/assets/social-share.png"/>
     <meta property="og:site_name" content="Times Square Live Media"/>
+    <meta property="og:image:alt" content="An image of Times Square with the Simes Square Live logo, and the words Honoring Our Nurse Hearoes Streaming Live on Thankisgiving Day" />
+    <meta property="og:description" content="Times Square Live Media & Estefan Productions present Stand By Me, a concert event to honor our nurse heroes. Streaming live on Thanksgiving day."/>
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:domain" content="tslivemedia.com" />
+    <meta name="twitter:url" content="http://tslivemedia.com/" />
+    <meta name="twitter:title" content="Stand by Me: A Concert Honoring our Nurse Heroes">
+    <meta name="twitter:description" content="Times Square Live Media & Estefan Productions present Stand By Me, a concert event to honor our nurse heroes. Streaming live on Thanksgiving day."/>
+    <meta name="twitter:image" content="https://www.tslivemedia.com/assets/social-share_twitter.png">
+    <meta name="twitter:label1" content="Streaming Live" />
+    <meta name="twitter:data1" content="Thanksgiving Day" />
   </head>
   <body>
     <!-- Cover page -->
-    <amp-story standalone="standalone" supports-landscape="supports-landscape" title="Stand by Me: A Concert Honoring our Nurse Heroes" publisher="Times Square Live Media" publisher-logo-src="assets/tsl.png" poster-portrait-src="assets/group-8.png">
+    <amp-story standalone="standalone" supports-landscape="supports-landscape" title="Stand by Me: A Concert Honoring our Nurse Heroes" publisher="Times Square Live Media" publisher-logo-src="assets/tsl.png" poster-portrait-src="assets/amp-poster.png" poster-portrait-src="assets/social-share_twitter.png" poster-square-src="assets/social-share.png">
       <amp-story-page id="cover" auto-advance-after="5s">
         <amp-story-grid-layer template="fill">
           <amp-video noaudio="noaudio" autoplay="autoplay" loop="loop" width="720" height="1280" poster="" layout="responsive">
             <source src="assets/video-1.mp4" type="video/mp4">
           </amp-video>
         </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical" class="top">
+        <amp-story-grid-layer template="vertical" class="top shadow">
           <amp-img alt="Times Square Live Logo" src="assets/tsl.png" width="422" height="186" layout="intrinsic" id="tsl-logo"></amp-img>
           <h2>& Emilio Estefan Productions</h2>
         </amp-story-grid-layer>
@@ -270,10 +297,15 @@
               <source src="assets/times-square-covid_muted.mp4" type="video/mp4">
             </amp-video>
           </amp-story-grid-layer>
-          <amp-story-grid-layer template="vertical" class="center">
-            <h2 class="yellow">Stand By Me</h2>
-            <p>A Concert Honoring our Nurse Heroes</p>
+          <amp-story-grid-layer template="thirds" class="shadow">
+            <div grid-area="middle-third">
+            <h1 class="yellow">Stand By Me</h1>
+            <h2>A Concert Honoring our Nurse Heroes<h2>
+          </div>
           </amp-story-grid-layer>
+          <amp-story-page-attachment layout="nodisplay" id="drawing-swipe-up" theme="dark">
+            <amp-img alt="Stand By Me Drawing" src="assets/SBMNH1.jpg" width="1200" height="1652" layout="intrinsic" id="nh-drawing"></amp-img>
+          </amp-story-page-attachment>
         </amp-story-page>
 
       <amp-story-page id="page2" auto-advance-after="6s">
@@ -285,7 +317,7 @@
           <h3>November 26 at 8pm ET/5pm PT</h3>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="center">
-          <h3>All proceeds benefit</h3>
+          <h3>All proceeds benefit the Nurse Heroes Foundation</h3>
           <amp-img alt="Nurse Heroes Foundation Logo" src="assets/Nurse_Heroes_Logo_transparent.png" width="400" height="305" layout="intrinsic" id="nh-logo"></amp-img>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="bottom">
@@ -483,7 +515,7 @@
             <source src="assets/times-square-covid_muted.mp4" type="video/mp4">
           </amp-video>
         </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical" class="center">
+        <amp-story-grid-layer template="vertical" class="center shadow">
           <h2>Sign up now for a reminder</h2>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="bottom">
@@ -495,8 +527,8 @@
         <amp-story-grid-layer template="fill">
           <amp-img src="assets/stand-by-me.jpg" width="720" height="1280" layout="responsive"></amp-img>
         </amp-story-grid-layer>
-        <amp-story-grid-layer template="vertical" class="top">
-          <h2 class="magenta">Support the Nurse Heroes Foundation</h2>
+        <amp-story-grid-layer template="vertical" class="center shadow">
+          <h1 class="magenta">Support the Nurse Heroes Foundation</h1>
         </amp-story-grid-layer>
         <amp-story-grid-layer template="vertical" class="bottom">
           <h2 >TEXT NURSE TO 707070 TO DONATE</h2>
